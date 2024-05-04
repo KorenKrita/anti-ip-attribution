@@ -1,5 +1,5 @@
 # 针对部分网站显示IP归属地的分流规则
-# anti-ip-attribution quantumultx-domesticsocial.list v0.3.1 6200ee95c8dcc89126f0d697dc37bc32268b7bb0
+# anti-ip-attribution quantumultx-domesticsocial.list v0.3.2 55c6f7e455b07a39a16327bff5a1cacd7a9e9b4a
 # https://github.com/lwd-temp/anti-ip-attribution
 # QuantumultX分流规则，策略组名称为DomesticSocial
 DOMAIN,httpdns.bilivideo.com,REJECT
@@ -27,6 +27,19 @@ DOMAIN-SUFFIX,bilivideo.com,DIRECT
 DOMAIN-SUFFIX,akamaized.net,DIRECT
 DOMAIN-SUFFIX,hdslb.com,DIRECT
 DOMAIN-SUFFIX,szbdyd.com,DIRECT
+DOMAIN,api.bilibili.com,DomesticSocial
+DOMAIN,app.bilibili.com,DomesticSocial
+DOMAIN,api.live.bilibili.com,DomesticSocial
+DOMAIN,api.vc.bilibili.com,DomesticSocial
+DOMAIN,passport.bilibili.com,DomesticSocial
+DOMAIN,live-trace.bilibili.com,DomesticSocial
+DOMAIN,message.bilibili.com,DomesticSocial
+DOMAIN,cm.bilibili.com,DomesticSocial
+DOMAIN-SUFFIX,im9.com,DomesticSocial
+DOMAIN-SUFFIX,acg.tv,DomesticSocial
+DOMAIN-SUFFIX,biligame.com,DomesticSocial
+DOMAIN-SUFFIX,api.weibo.cn,DomesticSocial
+DOMAIN-SUFFIX,api.weibo.com,DomesticSocial
 DOMAIN-SUFFIX,weibo.cn,DomesticSocial
 DOMAIN-SUFFIX,weibo.com,DomesticSocial
 DOMAIN-SUFFIX,weibocdn.com,DomesticSocial
@@ -51,10 +64,16 @@ DOMAIN,szshort.weixin.qq.com,DomesticSocial
 DOMAIN,szextshort.weixin.qq.com,DomesticSocial
 DOMAIN,szminorshort.weixin.qq.com,DomesticSocial
 DOMAIN,mp.weixin.qq.com,DomesticSocial
+DOMAIN,szshort.weixin.qq.com,DomesticSocial
+DOMAIN,zhihu-web-analytics.zhihu.com,DomesticSocial
+DOMAIN,www.zhihu.com,DomesticSocial
+DOMAIN,api.zhihu.com,DomesticSocial
 DOMAIN-SUFFIX,zhihu.com,DomesticSocial
 IP-CIDR,103.41.167.0/24,DomesticSocial
 IP-CIDR,118.89.204.198/23,REJECT
 IP6-CIDR,2402:4e00:1200:ed00:0:9089:6dac:96b6/40,REJECT
+DOMAIN-SUFFIX,gjfzpt.cn,REJECT
+IP-CIDR,219.143.187.136/32,REJECT
 DOMAIN-KEYWORD,core-c-lq,DomesticSocial
 DOMAIN-KEYWORD,core-lq,DomesticSocial
 DOMAIN-KEYWORD,normal-c-lq,DomesticSocial
@@ -211,6 +230,18 @@ DOMAIN-SUFFIX,douyucdn.cn,DomesticSocial
 DOMAIN-SUFFIX,douyu.com,DomesticSocial
 DOMAIN,bbs-api.mihoyo.com,DomesticSocial
 DOMAIN,bbs-api.miyoushe.com,DomesticSocial
+DOMAIN,api-takumi.mihoyo.com,DomesticSocial
+DOMAIN,log-upload.mihoyo.com,DomesticSocial
+DOMAIN,api.installer.xiaomi.com,REJECT
+DOMAIN,tracking.miui.com,REJECT
+DOMAIN,tracking.intl.miui.com,REJECT
+DOMAIN,tracking.rus.miui.com,REJECT
+DOMAIN,tracking.india.miui.com,REJECT
+DOMAIN-SUFFIX,sec.miui.com,REJECT
+DOMAIN-SUFFIX,sec.intl.miui.com,REJECT
+DOMAIN,api.sec.miui.com,REJECT
+DOMAIN,staging.sec.miui.com,REJECT
+DOMAIN,a0.app.xiaomi.com,REJECT
 DOMAIN-SUFFIX,douban.com,DomesticSocial
 IP-CIDR,49.233.242.15/32,DomesticSocial
 IP-CIDR,81.70.124.99/32,DomesticSocial
@@ -222,4 +253,6 @@ DOMAIN-SUFFIX,y.qq.com,DomesticSocial
 DOMAIN,zonai.skland.com,DomesticSocial
 DOMAIN,china-img.soulapp.cn,DIRECT
 DOMAIN,img.soulapp.cn,DIRECT
+DOMAIN-SUFFIX,getui.com,DomesticSocial
 DOMAIN-SUFFIX,soulapp.cn,DomesticSocial
+DOMAIN-SUFFIX,qchannel03.cn,DomesticSocial

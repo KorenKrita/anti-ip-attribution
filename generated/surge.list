@@ -1,5 +1,5 @@
 # 针对部分网站显示IP归属地的分流规则
-# anti-ip-attribution surge.list v0.3.1 6200ee95c8dcc89126f0d697dc37bc32268b7bb0
+# anti-ip-attribution surge.list v0.3.2 55c6f7e455b07a39a16327bff5a1cacd7a9e9b4a
 # https://github.com/lwd-temp/anti-ip-attribution
 # Surge分流规则
 DOMAIN,httpdns.bilivideo.com,REJECT
@@ -27,6 +27,19 @@ DOMAIN-SUFFIX,bilivideo.com,DIRECT
 DOMAIN-SUFFIX,akamaized.net,DIRECT
 DOMAIN-SUFFIX,hdslb.com,DIRECT
 DOMAIN-SUFFIX,szbdyd.com,DIRECT
+DOMAIN,api.bilibili.com
+DOMAIN,app.bilibili.com
+DOMAIN,api.live.bilibili.com
+DOMAIN,api.vc.bilibili.com
+DOMAIN,passport.bilibili.com
+DOMAIN,live-trace.bilibili.com
+DOMAIN,message.bilibili.com
+DOMAIN,cm.bilibili.com
+DOMAIN-SUFFIX,im9.com
+DOMAIN-SUFFIX,acg.tv
+DOMAIN-SUFFIX,biligame.com
+DOMAIN-SUFFIX,api.weibo.cn
+DOMAIN-SUFFIX,api.weibo.com
 DOMAIN-SUFFIX,weibo.cn
 DOMAIN-SUFFIX,weibo.com
 DOMAIN-SUFFIX,weibocdn.com
@@ -51,10 +64,16 @@ DOMAIN,szshort.weixin.qq.com
 DOMAIN,szextshort.weixin.qq.com
 DOMAIN,szminorshort.weixin.qq.com
 DOMAIN,mp.weixin.qq.com
+DOMAIN,szshort.weixin.qq.com
+DOMAIN,zhihu-web-analytics.zhihu.com
+DOMAIN,www.zhihu.com
+DOMAIN,api.zhihu.com
 DOMAIN-SUFFIX,zhihu.com
 IP-CIDR,103.41.167.0/24,no-resolve
 IP-CIDR,118.89.204.198/23,REJECT,no-resolve
 IP-CIDR6,2402:4e00:1200:ed00:0:9089:6dac:96b6/40,REJECT,no-resolve
+DOMAIN-SUFFIX,gjfzpt.cn,REJECT
+IP-CIDR,219.143.187.136/32,REJECT,no-resolve
 DOMAIN-KEYWORD,core-c-lq
 DOMAIN-KEYWORD,core-lq
 DOMAIN-KEYWORD,normal-c-lq
@@ -211,6 +230,18 @@ DOMAIN-SUFFIX,douyucdn.cn
 DOMAIN-SUFFIX,douyu.com
 DOMAIN,bbs-api.mihoyo.com
 DOMAIN,bbs-api.miyoushe.com
+DOMAIN,api-takumi.mihoyo.com
+DOMAIN,log-upload.mihoyo.com
+DOMAIN,api.installer.xiaomi.com,REJECT
+DOMAIN,tracking.miui.com,REJECT
+DOMAIN,tracking.intl.miui.com,REJECT
+DOMAIN,tracking.rus.miui.com,REJECT
+DOMAIN,tracking.india.miui.com,REJECT
+DOMAIN-SUFFIX,sec.miui.com,REJECT
+DOMAIN-SUFFIX,sec.intl.miui.com,REJECT
+DOMAIN,api.sec.miui.com,REJECT
+DOMAIN,staging.sec.miui.com,REJECT
+DOMAIN,a0.app.xiaomi.com,REJECT
 DOMAIN-SUFFIX,douban.com
 IP-CIDR,49.233.242.15/32,no-resolve
 IP-CIDR,81.70.124.99/32,no-resolve
@@ -222,4 +253,6 @@ DOMAIN-SUFFIX,y.qq.com
 DOMAIN,zonai.skland.com
 DOMAIN,china-img.soulapp.cn,DIRECT
 DOMAIN,img.soulapp.cn,DIRECT
+DOMAIN-SUFFIX,getui.com
 DOMAIN-SUFFIX,soulapp.cn
+DOMAIN-SUFFIX,qchannel03.cn
